@@ -1,0 +1,16 @@
+{
+  "short_name": "LeaseProof",
+  "name": "LeaseProof - Property Inspection & Handover",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f8fafc",
+  "theme_color": "#334155",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,1176 @@
+# MASTER BUILD PROMPT — LEASEPROOF
+## Property Inspection, Rental Handover & Condition Documentation Platform
+
+Act as a senior software engineer, real estate technology product architect, JavaScript developer, and premium SaaS UI/UX designer.
+
+Build a complete, fully functional web application named **LeaseProof**.
+
+**Tagline: Document Every Detail. Protect Every Handover.**
+
+LeaseProof is a property inspection and rental handover management platform designed for landlords, tenants, property managers, and real estate agencies.
+
+The application helps users register properties, perform room-by-room inspections, capture photographic evidence, document property conditions, compare move-in and move-out inspections, record damages, and generate professional handover reports.
+
+IMPORTANT:
+Build the complete working application, not just a static UI prototype.
+
+Every major feature, form, button, calculation, and navigation item must work.
+
+==================================================
+1. STRICT TECHNOLOGY REQUIREMENTS
+==================================================
+
+Use ONLY:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- IndexedDB
+- Native Browser APIs
+- HTML Canvas
+- SVG
+
+Do NOT use:
+
+- React
+- Next.js
+- Vue
+- Angular
+- Tailwind CSS
+- Bootstrap
+- Node.js backend
+- Python backend
+- External databases
+- Paid APIs
+- Cloud storage services
+
+Use client-side processing and browser storage.
+
+All property information, inspection records, photos, and documents must remain locally stored in the browser.
+
+Do not upload user data to external servers.
+
+The application must work locally using VS Code Live Server or another static HTTP server.
+
+==================================================
+2. PRODUCT IDENTITY AND VISUAL DESIGN
+==================================================
+
+Product Name: LeaseProof
+
+Tagline: Document Every Detail. Protect Every Handover.
+
+Create a premium real-estate SaaS interface.
+
+Visual direction:
+
+- Modern professional property-management aesthetic.
+- Deep charcoal and navy backgrounds.
+- Elegant white and grey typography.
+- Muted blue and purple accents.
+- Green for good condition.
+- Amber for attention required.
+- Red for damaged or missing items.
+- Thin borders.
+- Subtle shadows.
+- Premium cards.
+- Clean spacing.
+- Smooth transitions.
+- High-quality form and table design.
+
+Support:
+- Dark mode.
+- Light mode.
+- Desktop layout.
+- Tablet layout.
+- Mobile-responsive layout.
+
+Avoid generic admin dashboard styling.
+
+The application should feel like a commercial property inspection product.
+
+==================================================
+3. APPLICATION NAVIGATION
+==================================================
+
+Create a functional sidebar.
+
+1. Dashboard
+2. Properties
+3. Inspections
+4. Move-In Reports
+5. Move-Out Reports
+6. Condition Comparison
+7. Damage Register
+8. Handover Reports
+9. Documents
+10. Activity History
+11. Settings
+
+All navigation items must open functional sections.
+
+Top navigation must include:
+
+- LeaseProof branding.
+- Global property search.
+- Quick inspection button.
+- Notifications.
+- Theme toggle.
+- Workspace settings.
+
+==================================================
+4. PROPERTY MANAGEMENT
+==================================================
+
+Implement complete property CRUD functionality.
+
+Users must be able to:
+
+- Add properties.
+- View property details.
+- Edit property details.
+- Delete properties.
+- Archive properties.
+- Search properties.
+- Filter properties.
+- Sort properties.
+
+Property registration fields:
+
+- Property ID (automatically generated).
+- Property name.
+- Property type.
+- Property address.
+- City.
+- State.
+- Postal code.
+- Number of rooms.
+- Number of bathrooms.
+- Furnishing type.
+- Owner or landlord name.
+- Tenant name (optional).
+- Rental start date.
+- Expected end date.
+- Monthly rent (optional).
+- Security deposit (optional).
+- Additional notes.
+- Property cover image.
+
+Property types:
+
+- Apartment.
+- Independent House.
+- Villa.
+- Commercial Shop.
+- Office.
+- Warehouse.
+- PG / Hostel.
+- Other.
+
+Generate a unique property identifier.
+
+Example:
+LP-2026-0001
+
+Create a property detail page with:
+
+- Property overview.
+- Basic information.
+- Room list.
+- Inspection history.
+- Attached documents.
+- Move-in status.
+- Move-out status.
+- Handover history.
+
+==================================================
+5. ROOM AND AREA MANAGEMENT
+==================================================
+
+Each property should support multiple rooms and areas.
+
+Default room categories:
+
+- Living Room.
+- Bedroom.
+- Kitchen.
+- Bathroom.
+- Balcony.
+- Hallway.
+- Storage.
+- Parking.
+- Exterior.
+- Other.
+
+Allow users to:
+
+- Add custom rooms.
+- Rename rooms.
+- Remove rooms.
+- Reorder rooms.
+- Add room descriptions.
+- Attach room photos.
+
+Each room should have its own inspection checklist.
+
+Do not limit users to predefined rooms.
+
+==================================================
+6. DIGITAL INSPECTION ENGINE
+==================================================
+
+This is the main feature of LeaseProof.
+
+Build a room-by-room property inspection workflow.
+
+Each inspection should include:
+
+- Inspection ID.
+- Property ID.
+- Inspection type.
+- Inspection date.
+- Inspector name.
+- Tenant name (optional).
+- Inspection notes.
+- Inspection status.
+- Room-wise condition records.
+
+Inspection types:
+
+- MOVE-IN.
+- MOVE-OUT.
+- ROUTINE INSPECTION.
+- MAINTENANCE INSPECTION.
+
+For every room, allow users to inspect:
+
+A. WALLS AND PAINT
+- Paint condition.
+- Cracks.
+- Stains.
+- Water damage.
+- Surface damage.
+
+B. FLOORING
+- Tiles.
+- Wooden flooring.
+- Cracks.
+- Scratches.
+- Stains.
+
+C. DOORS AND WINDOWS
+- Door condition.
+- Locks.
+- Hinges.
+- Glass.
+- Window operation.
+
+D. ELECTRICAL
+- Lights.
+- Switches.
+- Power sockets.
+- Fans.
+- Wiring condition.
+
+E. FURNITURE AND FIXTURES
+- Wardrobes.
+- Shelves.
+- Cabinets.
+- Curtains.
+- Furniture condition.
+
+F. PLUMBING
+- Taps.
+- Sinks.
+- Faucets.
+- Toilets.
+- Drainage.
+- Water leakage.
+
+G. APPLIANCES
+- Air conditioner.
+- Refrigerator.
+- Washing machine.
+- Water heater.
+- Other appliances.
+
+Users must be able to add custom inspection items.
+
+==================================================
+7. CONDITION RATING SYSTEM
+==================================================
+
+For each inspected item, provide:
+
+- EXCELLENT
+- GOOD
+- FAIR
+- DAMAGED
+- MISSING
+- NOT APPLICABLE
+- NOT INSPECTED
+
+Each item should also support:
+
+- Description.
+- Inspector notes.
+- Optional estimated repair cost.
+- Photo attachments.
+- Additional observations.
+
+Use appropriate visual condition indicators.
+
+Important:
+Do not assume a missing inspection item is in good condition.
+
+Clearly distinguish NOT INSPECTED from GOOD.
+
+Allow users to mark an entire room as reviewed only after required items have been inspected or explicitly marked not applicable.
+
+==================================================
+8. PHOTO EVIDENCE MANAGEMENT
+==================================================
+
+Implement a real local photo management system.
+
+Allow users to:
+
+- Capture photos using device camera where supported.
+- Upload photos from gallery.
+- Attach multiple photos to an inspection item.
+- Attach room-level photographs.
+- Preview photographs.
+- Delete photographs.
+- Add photo descriptions.
+- Record capture or upload timestamps.
+
+Use the browser File API and IndexedDB.
+
+Store image Blobs rather than unnecessarily converting everything into large Base64 strings.
+
+Add reasonable image size limits.
+
+Optionally resize large photographs while preserving useful visual detail.
+
+Create photo categories:
+
+- BEFORE.
+- AFTER.
+- DAMAGE.
+- GENERAL CONDITION.
+- REPAIR EVIDENCE.
+
+Create a photo gallery with filters.
+
+Every photo must be linked to:
+
+- Property.
+- Inspection.
+- Room.
+- Inspection item.
+
+Never fabricate timestamps or photographic evidence.
+
+If browser camera functionality is unavailable, show an upload fallback.
+
+==================================================
+9. MOVE-IN INSPECTION
+==================================================
+
+Create a dedicated move-in inspection workflow.
+
+When a tenant moves into a property:
+
+1. Select the property.
+2. Create a move-in inspection.
+3. Inspect each room.
+4. Record item conditions.
+5. Capture photographs.
+6. Add notes.
+7. Record existing damages.
+8. Review inspection completeness.
+9. Save the inspection.
+10. Generate a move-in condition report.
+
+The system should preserve the original move-in record.
+
+Do not allow accidental modification of an already finalized report.
+
+If a report needs correction, create a documented amendment instead of silently replacing the original record.
+
+==================================================
+10. MOVE-OUT INSPECTION
+==================================================
+
+Create a dedicated move-out inspection workflow.
+
+Allow the user to:
+
+1. Select the property.
+2. Select an existing move-in inspection.
+3. Create a move-out inspection.
+4. Inspect the same room structure.
+5. Record current conditions.
+6. Capture new photographs.
+7. Add repair observations.
+8. Review changes.
+9. Finalize the inspection.
+10. Generate a move-out report.
+
+Automatically identify which original inspection items have changed condition.
+
+Do not automatically classify every difference as tenant-caused damage.
+
+The application must distinguish:
+
+- Pre-existing condition.
+- Newly observed damage.
+- Wear and tear.
+- Maintenance requirement.
+- Missing item.
+- Uncertain or disputed observation.
+
+Allow inspectors to enter their own explanation.
+
+==================================================
+11. BEFORE / AFTER CONDITION COMPARISON
+==================================================
+
+This is one of the most important features.
+
+Build an interactive side-by-side comparison workspace.
+
+LEFT SIDE:
+Original move-in inspection.
+
+RIGHT SIDE:
+Latest move-out inspection.
+
+Compare:
+
+- Room condition.
+- Individual inspection items.
+- Condition rating.
+- Inspector notes.
+- Associated photographs.
+- Recorded repair observations.
+
+Automatically categorize differences:
+
+- NO CHANGE.
+- IMPROVED.
+- CONDITION DECLINED.
+- NEW DAMAGE REPORTED.
+- ITEM MISSING.
+- NOT COMPARABLE.
+- REQUIRES REVIEW.
+
+Provide:
+
+- Side-by-side photos.
+- Before/after image viewer.
+- Difference highlighting.
+- Comparison summary.
+- Room-wise change count.
+- Detailed item comparison.
+
+Do not compare unrelated items or inspections incorrectly.
+
+If an item did not exist in the original inspection, mark it as NOT COMPARABLE.
+
+==================================================
+12. DAMAGE REGISTER
+==================================================
+
+Create a dedicated damage management module.
+
+Each damage record should contain:
+
+- Damage ID.
+- Property ID.
+- Room ID.
+- Inspection ID.
+- Damaged item.
+- Damage category.
+- Description.
+- First recorded date.
+- Severity.
+- Photographic evidence.
+- Estimated repair cost.
+- Actual repair cost.
+- Resolution status.
+- Additional notes.
+
+Damage categories:
+
+- Structural.
+- Electrical.
+- Plumbing.
+- Furniture.
+- Appliance.
+- Flooring.
+- Wall and paint.
+- Fixtures.
+- Other.
+
+Resolution statuses:
+
+- OPEN.
+- UNDER REVIEW.
+- REPAIR SCHEDULED.
+- REPAIRED.
+- ACCEPTED.
+- DISPUTED.
+- CLOSED.
+
+Allow users to:
+
+- Add damage.
+- Edit damage.
+- Attach photographs.
+- Update status.
+- Record repair details.
+- View damage history.
+
+Damage records must retain their original inspection reference.
+
+==================================================
+13. MAINTENANCE AND REPAIR TRACKING
+==================================================
+
+Create a practical maintenance module.
+
+Allow users to record:
+
+- Maintenance title.
+- Property.
+- Room.
+- Related damage.
+- Repair description.
+- Service provider.
+- Repair date.
+- Estimated cost.
+- Actual cost.
+- Repair status.
+- Before photos.
+- After photos.
+- Notes.
+
+Calculate total repair expenses per property.
+
+Display:
+- Pending repairs.
+- Completed repairs.
+- Repair expenses.
+- Recently updated maintenance records.
+
+==================================================
+14. DIGITAL HANDOVER REPORT GENERATOR
+==================================================
+
+Build a professional report generation engine.
+
+Generate a detailed property handover report containing:
+
+1. LeaseProof branding.
+2. Property details.
+3. Inspection type.
+4. Inspection date.
+5. Inspector information.
+6. Tenant and owner details where provided.
+7. Room-wise inspection results.
+8. Item-wise condition ratings.
+9. Inspection notes.
+10. Damage records.
+11. Photograph references or embedded photographs.
+12. Move-in and move-out comparison.
+13. Outstanding maintenance issues.
+14. Handover summary.
+15. Acknowledgement section.
+16. Signature fields.
+
+Support:
+- Printable HTML report.
+- Browser Print-to-PDF.
+- JSON export.
+- CSV condition report.
+
+Create a clean, professional document layout suitable for property records.
+
+Do not claim that the generated report is automatically legally binding.
+
+If signatures are included, clearly identify them as acknowledgements recorded within the application, not independently verified digital signatures.
+
+==================================================
+15. INSPECTION SIGN-OFF
+==================================================
+
+Create an acknowledgement section.
+
+Allow the inspector to record:
+
+- Inspector name.
+- Owner or representative name.
+- Tenant or representative name.
+- Inspection date.
+- Acknowledgement notes.
+
+Provide an optional drawn signature using HTML Canvas.
+
+Allow the user to clear and redraw the signature.
+
+Save signatures locally with the inspection record.
+
+Do not claim that a drawn signature establishes identity or guarantees legal validity.
+
+Show signature status clearly:
+
+- PROVIDED.
+- NOT PROVIDED.
+
+Allow users to generate reports without signatures.
+
+==================================================
+16. DOCUMENT MANAGEMENT
+==================================================
+
+Allow users to attach:
+
+- Rental agreement PDFs.
+- Purchase or property documents.
+- Maintenance invoices.
+- Inspection reports.
+- Supporting photographs.
+
+Use IndexedDB Blob storage.
+
+Allow:
+
+- Preview.
+- Download.
+- Delete.
+- Rename.
+- Add descriptions.
+- Link documents to a property.
+
+Never upload documents externally.
+
+Validate file types and reasonable file size limits.
+
+==================================================
+17. DASHBOARD AND ANALYTICS
+==================================================
+
+Create a real property inspection dashboard.
+
+KPI cards:
+
+- Total properties.
+- Total inspections.
+- Move-in inspections.
+- Move-out inspections.
+- Open damage reports.
+- Pending repairs.
+- Completed handovers.
+- Total recorded repair costs.
+
+Charts:
+
+- Inspections by month.
+- Property condition distribution.
+- Damage categories.
+- Open vs resolved damages.
+- Repair expenditure.
+- Inspection completion rate.
+
+Every metric must be calculated from actual IndexedDB records.
+
+Do not use hardcoded statistics in the real workspace.
+
+==================================================
+18. SEARCH, FILTERS AND SORTING
+==================================================
+
+Implement global search across:
+
+- Property names.
+- Property IDs.
+- Addresses.
+- Room names.
+- Inspection IDs.
+- Damage IDs.
+- Item descriptions.
+
+Filters:
+
+- Property type.
+- Inspection type.
+- Inspection date.
+- Condition rating.
+- Damage status.
+- Repair status.
+
+Sorting:
+
+- Newest inspection.
+- Oldest inspection.
+- Property name.
+- Highest repair cost.
+- Most open damage records.
+
+Add pagination for large lists.
+
+==================================================
+19. ACTIVITY HISTORY AND AUDIT TRAIL
+==================================================
+
+Maintain an activity history.
+
+Record:
+
+- Property created.
+- Property updated.
+- Inspection started.
+- Inspection saved.
+- Inspection finalized.
+- Photo attached.
+- Damage recorded.
+- Repair completed.
+- Document uploaded.
+- Report generated.
+- Backup restored.
+
+Each event should contain:
+
+- Event ID.
+- Event type.
+- Related property.
+- Related inspection.
+- Timestamp.
+- Description.
+
+Protect finalized inspection records from silent modifications.
+
+Any correction to a finalized inspection must be stored as a separate amendment with a reason.
+
+==================================================
+20. DATA STORAGE ARCHITECTURE
+==================================================
+
+Use IndexedDB with separate object stores.
+
+PROPERTIES:
+- id
+- property_code
+- name
+- property_type
+- address
+- city
+- state
+- postal_code
+- rooms
+- owner_name
+- tenant_name
+- rental_start_date
+- expected_end_date
+- notes
+- created_at
+
+ROOMS:
+- id
+- property_id
+- room_name
+- room_type
+- description
+- display_order
+
+INSPECTIONS:
+- id
+- property_id
+- inspection_type
+- parent_inspection_id
+- inspector_name
+- inspection_date
+- status
+- notes
+- finalized_at
+
+INSPECTION_ITEMS:
+- id
+- inspection_id
+- room_id
+- item_name
+- category
+- condition
+- description
+- notes
+- estimated_repair_cost
+
+PHOTOS:
+- id
+- property_id
+- inspection_id
+- room_id
+- inspection_item_id
+- file_name
+- file_type
+- file_size
+- image_blob
+- photo_category
+- description
+- captured_at
+
+DAMAGES:
+- id
+- property_id
+- inspection_id
+- room_id
+- item_name
+- category
+- severity
+- description
+- estimated_cost
+- actual_cost
+- status
+- created_at
+
+REPAIRS:
+- id
+- property_id
+- damage_id
+- description
+- service_provider
+- repair_date
+- estimated_cost
+- actual_cost
+- status
+- notes
+
+DOCUMENTS:
+- id
+- property_id
+- inspection_id
+- file_name
+- file_type
+- file_blob
+- description
+- uploaded_at
+
+SIGNATURES:
+- id
+- inspection_id
+- signer_name
+- signer_role
+- signature_blob
+- created_at
+
+ACTIVITY_LOGS:
+- id
+- property_id
+- inspection_id
+- event_type
+- description
+- timestamp
+
+SETTINGS:
+- id
+- theme
+- default_condition_options
+- photo_size_limit
+- report_preferences
+
+Implement reusable functions for:
+
+- Database initialization.
+- Insert.
+- Read.
+- Update.
+- Delete.
+- Search.
+- Indexed queries.
+- Safe database transactions.
+
+Create appropriate indexes for property IDs, inspection IDs and dates.
+
+Use transactions when a workflow changes multiple related records.
+
+Do not put all data into one huge LocalStorage object.
+
+==================================================
+21. BACKUP AND RESTORE
+==================================================
+
+Because all records are stored locally, implement a complete backup system.
+
+Backup must include:
+
+- Properties.
+- Rooms.
+- Inspections.
+- Inspection items.
+- Photographs.
+- Damage records.
+- Repair records.
+- Documents.
+- Signatures.
+- Activity logs.
+- Settings.
+
+Export photographs and documents safely as part of the backup.
+
+Provide:
+
+- Full JSON backup.
+- Backup timestamp.
+- Backup version.
+- Record counts.
+- Backup file size.
+
+Restore functionality:
+
+1. Select a backup file.
+2. Validate JSON structure.
+3. Validate version.
+4. Validate related record IDs.
+5. Detect duplicate IDs.
+6. Preview the records to import.
+7. Ask for confirmation.
+8. Restore records and file Blobs.
+9. Display import results.
+
+Never silently overwrite existing inspection records.
+
+Provide a clear workspace reset function with explicit confirmation.
+
+==================================================
+22. PRIVACY AND SECURITY
+==================================================
+
+- Keep all property data local.
+- Never upload photos or documents.
+- Do not include external analytics.
+- Do not make hidden network calls.
+- Treat imported text as untrusted.
+- Use textContent for user-generated text.
+- Prevent HTML injection.
+- Validate file types.
+- Apply file size limits.
+- Avoid accidental document deletion.
+- Protect finalized inspections.
+- Recommend regular backups.
+
+Clearly explain that browser storage can be cleared, and regular backups are essential.
+
+==================================================
+23. DEMO WORKSPACE
+==================================================
+
+Create an optional demo workspace.
+
+Include:
+
+- 3 sample properties.
+- Multiple rooms per property.
+- One completed move-in inspection.
+- One move-out inspection.
+- Sample condition records.
+- Before/after photographs or clearly labeled illustrative sample images.
+- Sample damage records.
+- Sample repairs.
+- Sample handover report.
+
+Add button:
+
+LOAD DEMO WORKSPACE
+
+Clearly label all demo information as DEMO DATA.
+
+Never mix demo data with the real user workspace.
+
+Allow the user to reset demo data independently.
+
+==================================================
+24. PROJECT FILE STRUCTURE
+==================================================
+
+Create this complete project:
+
+LeaseProof/
+│
+├── index.html
+├── manifest.json
+├── sw.js
+├── README.md
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── app.js
+│   ├── database.js
+│   ├── properties.js
+│   ├── rooms.js
+│   ├── inspections.js
+│   ├── inspection-items.js
+│   ├── photos.js
+│   ├── comparison.js
+│   ├── damages.js
+│   ├── repairs.js
+│   ├── documents.js
+│   ├── signatures.js
+│   ├── reports.js
+│   ├── analytics.js
+│   ├── activity-log.js
+│   ├── backup.js
+│   └── ui.js
+│
+└── assets/
+    └── logo.svg
+
+Use modular JavaScript.
+
+Avoid one giant JavaScript file.
+
+==================================================
+25. TESTING REQUIREMENTS
+==================================================
+
+Test:
+
+PROPERTY MANAGEMENT:
+- Create property.
+- Edit property.
+- Delete property.
+- Add custom room.
+- Search property.
+
+INSPECTION:
+- Create move-in inspection.
+- Create move-out inspection.
+- Add inspection items.
+- Save condition ratings.
+- Finalize inspection.
+- Create amendment to finalized inspection.
+
+PHOTO STORAGE:
+- Upload image.
+- Capture image when supported.
+- Preview image.
+- Attach multiple photos.
+- Delete photo.
+- Restore photo from backup.
+
+COMPARISON:
+- Compare same inspection items.
+- Detect unchanged condition.
+- Detect improved condition.
+- Detect declined condition.
+- Detect missing item.
+- Handle non-comparable items.
+
+DAMAGE:
+- Create damage report.
+- Update damage status.
+- Attach photographs.
+- Record repair costs.
+
+REPORTS:
+- Generate move-in report.
+- Generate move-out report.
+- Generate comparison report.
+- Generate printable PDF using browser print.
+- Verify actual stored information.
+
+STORAGE:
+- Persistence after reload.
+- IndexedDB transaction handling.
+- Full backup.
+- Full restore.
+- Duplicate ID handling.
+
+==================================================
+26. FINAL ACCEPTANCE CRITERIA
+==================================================
+
+The application is complete only when:
+
+1. Users can register and manage properties.
+2. Custom rooms can be added.
+3. Room-wise inspections work.
+4. Condition ratings are stored correctly.
+5. Multiple photos can be attached to inspection items.
+6. Move-in and move-out inspections can be linked.
+7. Before/after comparison uses actual inspection records.
+8. Damage records can be created.
+9. Repairs can be tracked.
+10. Printable handover reports work.
+11. Optional signatures can be recorded.
+12. Inspection history is maintained.
+13. Dashboard analytics reflect actual records.
+14. Backup includes photos and documents.
+15. Restore correctly restores related records.
+16. No placeholder buttons remain.
+17. No fabricated inspection results appear.
+18. The application works on desktop and mobile.
+19. Data persists after browser reload.
+
+==================================================
+27. README AND DELIVERY
+==================================================
+
+Generate a detailed README containing:
+
+- Product overview.
+- Features.
+- Technology stack.
+- Folder structure.
+- Local setup instructions.
+- Windows 11 instructions.
+- VS Code Live Server instructions.
+- IndexedDB architecture.
+- Photo storage explanation.
+- Inspection workflow.
+- Backup and restore.
+- Privacy and security.
+- Browser compatibility.
+
+Service Worker features must be tested on localhost or HTTPS.
+
+==================================================
+FINAL DELIVERY INSTRUCTIONS
+==================================================
+
+Build the complete LeaseProof application in one implementation.
+
+Do not stop after generating the dashboard.
+
+Do not leave placeholder buttons.
+
+Do not use fake inspection data in the actual user workspace.
+
+Do not skip IndexedDB implementation.
+
+Do not skip photographic evidence storage.
+
+Do not skip move-in and move-out comparison.
+
+Do not skip report generation.
+
+Do not silently modify finalized inspection records.
+
+All dashboard statistics must come from actual records.
+
+Prioritize:
+1. Data integrity.
+2. Reliable inspection workflows.
+3. Accurate before/after comparison.
+4. Photo and document persistence.
+5. Privacy.
+6. Premium user experience.
+
+Generate all required source files and verify the main workflows before completion.
+
+The final result should feel like a professional property inspection and handover management product that landlords, tenants, property managers, and real estate agencies can genuinely use.
+
+IMPORTANT PRODUCT PRINCIPLE:
+LeaseProof documents observed property conditions. It must not automatically make legal conclusions about responsibility, tenant fault, or deposit deductions.
